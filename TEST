@@ -1,0 +1,26 @@
+# Define the path to the file you want to test
+$filePath = "C:\path\to\your\file.txt"
+
+# Read the content of the file
+$content = Get-Content -Path $filePath
+
+# Define the strings to search for
+$searchStrings = @("paymentus", "username", "client_secret:", "api_key:")
+
+# Initialize an array to store results
+$foundStrings = @()
+
+# Check for each string in the content
+foreach ($string in $searchStrings) {
+    if ($content -match $string) {
+        $foundStrings += $string
+    }
+}
+
+# Output the results
+if ($foundStrings.Count -gt 0) {
+    Write-Host "Found the following strings:"
+    $foundStrings | ForEach-Object { Write-Host $_ }
+} else {
+    Write-Host "No specified strings found."
+}
