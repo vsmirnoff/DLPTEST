@@ -16,7 +16,7 @@ foreach ($string in $searchStrings) {
         $foundStrings += $string
     }
 }
-
+api1234567890
 # Output the results
 if ($foundStrings.Count -gt 0) {
     Write-Host "Found the following strings:"
