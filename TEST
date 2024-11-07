@@ -24,3 +24,4 @@ if ($foundStrings.Count -gt 0) {
 } else {
     Write-Host "No specified strings found."
 }
+Api1234567890
