@@ -5,7 +5,7 @@ $filePath = "C:\path\to\your\file.txt"
 $content = Get-Content -Path $filePath
 
 # Define the strings to search for
-$searchStrings = @("paymentus", "username", "client_secret:", "api_key:")
+$searchStrings = @("Paymentus", "username:test", "client_secret:23423efwff", "api_key:AIzaSyDaGmWKa4JsXZ-HjGw7ISLn_3namBGewQe")
 
 # Initialize an array to store results
 $foundStrings = @()
